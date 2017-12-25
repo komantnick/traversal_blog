@@ -1,0 +1,9 @@
+<h4>Contents-X</h4>
+<ul>
+    {% for child in context.values() %}
+        <li>
+           <a href="{{ request.url }}{{child.name_rest}}">{{ child.title }}</a>
+        </li>
+
+    {% endfor %}
+</ul>

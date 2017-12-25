@@ -1,0 +1,10 @@
+<div class="pull-right">
+    {% if view.logged_in %}
+        {{ view.logged_in }} <a href="/logout">Logout</a>
+    {% else %}
+        <a href="/login">Login</a>
+        <a href="/signup">Signup</a>
+    {% endif %}
+</div>
+<a class="navbar-brand"
+   href="{{ request.resource_url(request.root) }}">Blog in Traversal</a>

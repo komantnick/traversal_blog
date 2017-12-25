@@ -1,0 +1,14 @@
+
+<p>
+    <form class="form-inline"
+          action="{{ request.url }}/add_item"
+          method="POST">
+        <div class="form-group">
+            <input class="form-control" name="document_title"
+                   placeholder="New document title..."/>
+            <input class="form-control" name="document_text"
+                   placeholder="New document text..."/>
+        </div>
+        <input type="submit" class="btn" value="Add Document"/>
+    </form>
+</p>

@@ -1,0 +1,11 @@
+{% extends "templates/layout.jinja2" %}
+{% block content %}
+
+    <h2>{{ context.title }}</h2>
+    {% include "templates/c2.jinja2" %}
+    {% include "templates/addform.jinja2" %}
+
+     {% include "templates/add-user-group.jinja2" %}
+
+
+{% endblock content %}

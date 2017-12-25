@@ -1,0 +1,23 @@
+{% extends "templates/layout.jinja2" %}
+{% block content %}
+
+    <span>{{ message }}</span>
+
+
+    <form action="{{ url }}" method="post">
+        <label for="login">Username</label>
+        <input type="text" id="login"
+               name="login"
+               value="{{ login }}"/><br/>
+        <label for="password">Password</label>
+        <input type="password" id="password"
+               name="password"
+               value="{{ password }}"/><br/>
+         <label for="title">Title</label>
+        <input type="text" id="title"
+               name="title"
+               value="{{ title }}"/><br/>
+        <input type="submit" name="form.submitted"
+               value="Sign Up"/>
+    </form>
+{% endblock content %}

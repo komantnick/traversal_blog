@@ -1,0 +1,10 @@
+{% extends "templates/layout.jinja2" %}
+{% block content %}
+
+    <h5>{{ context.datetime }}</h5>
+    <h2>{{ context.title }}</h2>
+    <p>{{ context.text }}</p>
+     <p title="Edit" ><a class="btn btn-primary btn-xs" href="{{ request.url }}/update">Edit<span class="glyphicon glyphicon-pencil"></span></a></button></p>
+    <p title="Delete"><a class="btn btn-danger btn-xs" href="{{ request.url }}/delete">Delete<span class="glyphicon glyphicon-trash"></span></a></button></p>
+
+{% endblock content %}

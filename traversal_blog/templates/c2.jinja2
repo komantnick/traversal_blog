@@ -1,0 +1,15 @@
+<h4>Contents-X</h4>
+<ul>
+    {% for child in context.values() %}
+        <li>
+
+           {% if child.__class__.__name__ == "Communities" %}
+           <a href="{{ request.url }}/{{child.name_rest}}">COMMUNITIES:{{ child.title }}</a>
+           {% else %}
+           <a href="{{ request.url }}/{{child.name_rest}}">{{ child.title }}</a>
+           {% endif %}
+
+        </li>
+
+    {% endfor %}
+</ul>

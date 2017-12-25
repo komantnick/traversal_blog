@@ -1,0 +1,3 @@
+[run]
+source = traversal_blog
+omit = traversal_blog/test*
